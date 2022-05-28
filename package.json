@@ -1,0 +1,19 @@
+{
+  "name": "Clase_en_ES6",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "babel":"npx babel -d dist/ src --config-file ./babel.config.json",
+    "browserify": "browserify dist/main.js -o dist/bundle.js",
+    "compilar": "npm run babel && npm run browserify"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/cli": "^7.17.10",
+    "@babel/core": "^7.18.2",
+    "@babel/preset-env": "^7.18.2"
+  }
+}
